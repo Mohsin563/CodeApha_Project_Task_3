@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Library</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1> Book Library</h1>
+    </header>
+
+    <!-- Add Book Section -->
+    <section id="add-book">
+        <h2>Add a New Book</h2>
+        <form id="book-form">
+            <input type="text" id="title" placeholder="Book Title" required>
+            <input type="text" id="author" placeholder="Author" required>
+            <input type="text" id="category" placeholder="Category" required>
+            <button type="submit">Add Book</button>
+        </form>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search-books">
+        <h2>Search Books</h2>
+        <input type="text" id="search-input" placeholder="Search by Title or Author">
+        <button id="search-button">Search</button>
+    </section>
+
+    <!-- Book List Section -->
+    <section id="book-list-section">
+        <h2>Book List</h2>
+        <ul id="book-list"></ul>
+    </section>
+
+    <!-- Borrowing History Section -->
+    <section id="borrow-history">
+        <h2>Borrowing History</h2>
+        <ul id="history-list"></ul>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
